@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "blog/hello-world copy",
+    "title": "Привет Мир",
+    "description": "Это первый пост",
+    "date": "2024-03-05T00:00:00.000Z",
+    "published": true,
+    "body": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const c={h1:\"h1\",p:\"p\",...r.components};return t(n,{children:[e(c.h1,{children:\"Привет Мир\"}),\"\\n\",e(c.p,{children:\"Добро пожаловать в мой блог\"})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "hello-world copy"
+  },
+  {
+    "slug": "blog/hello-world",
+    "title": "Привет Мир",
+    "description": "Это первый пост",
+    "date": "2024-03-06T00:00:00.000Z",
+    "published": true,
+    "body": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const c={h1:\"h1\",p:\"p\",...r.components};return t(n,{children:[e(c.h1,{children:\"Привет Мир\"}),\"\\n\",e(c.p,{children:\"Добро пожаловать в мой блог\"})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "hello-world"
+  }
+]

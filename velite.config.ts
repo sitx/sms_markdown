@@ -1,5 +1,3 @@
-import { describe } from 'node:test'
-import { title } from 'process'
 import { defineConfig, defineCollection, s } from 'velite'
 
 const computedFields = <T extends { slug: string }>(data: T) => ({
@@ -7,7 +5,7 @@ const computedFields = <T extends { slug: string }>(data: T) => ({
   slugAsParams: data.slug.split('/').slice(1).join('')
 })
 
-const post = defineCollection({
+const posts = defineCollection({
   name: 'Post',
   pattern: 'blog/**/*.mdx',
   schema: s
@@ -31,7 +29,7 @@ export default defineConfig({
     name: '[name]-[hash:6].[ext]',
     clean: true
   },
-  collections: { post },
+  collections: { posts },
   mdx: {
     rehypePlugins: [],
     remarkPlugins: []
