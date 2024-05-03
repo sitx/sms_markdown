@@ -6,6 +6,7 @@ import { Icons } from './icons'
 import { MainNav } from './main-nav'
 import { MobileNav } from './mobile-nav'
 import { ModeToggle } from './mode-toggle'
+import { SiteVersion } from './vesrion'
 
 export function SiteHeader() {
   return (
@@ -56,6 +57,7 @@ export function SiteHeader() {
               </div>
             </Link>
             <ModeToggle />
+            <SiteVersion />
             <MobileNav />
           </nav>
         </div>
