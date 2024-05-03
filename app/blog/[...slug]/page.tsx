@@ -3,6 +3,7 @@ import { MDXComponent } from '@/components/mdx-components'
 import { formatDate } from '@/lib/utils'
 import { Calendar } from 'lucide-react'
 import { notFound } from 'next/navigation'
+import '@/styles/mdx.css'
 
 interface PostPageProps {
   params: {

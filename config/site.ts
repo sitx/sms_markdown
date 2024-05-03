@@ -6,7 +6,7 @@ export const siteConfig = {
   url: 'https://sms-sigma-nine.vercel.app',
   descriprion: 'Nextjs 14 blog using velite tailwindcss and shadcn',
   author: 'sky_wa1ker',
-  version: '0.12',
+  version: 'Step.09',
   links: {
     site: 'https://sms-sigma-nine.vercel.app/',
     github: 'https://github.com/sitx',

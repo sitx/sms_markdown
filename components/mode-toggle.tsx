@@ -1,12 +1,12 @@
 'use client'
 
+import { useTheme } from 'next-themes'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem
-} from '@radix-ui/react-dropdown-menu'
-import { useTheme } from 'next-themes'
-import { DropdownMenuTrigger } from './ui/dropdown-menu'
+  DropdownMenuItem,
+  DropdownMenuTrigger
+} from './ui/dropdown-menu'
 import { Button } from './ui/button'
 import { Moon, Sun } from 'lucide-react'
 
@@ -23,22 +23,13 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align='end'>
-        <DropdownMenuItem
-          className='cursor-pointer border-none'
-          onClick={() => setTheme('light')}
-        >
+        <DropdownMenuItem onClick={() => setTheme('light')}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem
-          className='cursor-pointer border-none'
-          onClick={() => setTheme('dark')}
-        >
+        <DropdownMenuItem onClick={() => setTheme('dark')}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem
-          className='cursor-pointer hover:border-none'
-          onClick={() => setTheme('system')}
-        >
+        <DropdownMenuItem onClick={() => setTheme('system')}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
