@@ -1,14 +1,5 @@
 [
   {
-    "slug": "blog/hello-world copy",
-    "title": "Привет Мир",
-    "description": "Это первый пост",
-    "date": "2024-03-05T00:00:00.000Z",
-    "published": true,
-    "body": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const c={h1:\"h1\",p:\"p\",...r.components};return t(n,{children:[e(c.h1,{children:\"Привет Мир\"}),\"\\n\",e(c.p,{children:\"Добро пожаловать в мой блог\"})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
-    "slugAsParams": "hello-world copy"
-  },
-  {
     "slug": "blog/hello-world",
     "title": "Привет Мир",
     "description": "Это первый пост",
@@ -16,5 +7,14 @@
     "published": true,
     "body": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const c={h1:\"h1\",p:\"p\",...r.components};return t(n,{children:[e(c.h1,{children:\"Привет Мир\"}),\"\\n\",e(c.p,{children:\"Добро пожаловать в мой блог\"})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
     "slugAsParams": "hello-world"
+  },
+  {
+    "slug": "blog/hello-world2",
+    "title": "Дела идут",
+    "description": "Это второй пост",
+    "date": "2024-05-03T00:00:00.000Z",
+    "published": true,
+    "body": "const{Fragment:n,jsx:e,jsxs:r}=arguments[0];function _createMdxContent(t){const c={code:\"code\",em:\"em\",h1:\"h1\",h2:\"h2\",h3:\"h3\",p:\"p\",strong:\"strong\",...t.components};return r(n,{children:[e(c.h1,{children:\"Главный заголовок\"}),\"\\n\",r(c.p,{children:[e(c.strong,{children:\"текст\"}),\": немного больше информации, я хочу закончить эту серию польностью.\"]}),\"\\n\",e(c.p,{children:r(c.em,{children:[\"делаем текст италик (фабрик) средствами \",e(c.strong,{children:\"markdown\"})]})}),\"\\n\",e(c.h2,{children:\"Второй заголовок\"}),\"\\n\",r(c.p,{children:[\"просто текст с вставкой кода \",e(c.code,{children:\"инлайн код\"})]}),\"\\n\",e(c.h3,{children:\"Заголовок 3\"})]})}return{default:function(n={}){const{wrapper:r}=n.components||{};return r?e(r,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "hello-world2"
   }
 ]
