@@ -41,7 +41,18 @@ export function SiteHeader() {
                 )}
               >
                 <Icons.telegram className='h-4 w-4' />
-                <span className='sr-only'>GitHub</span>
+                <span className='sr-only'>Telegram</span>
+              </div>
+            </Link>
+            <Link href={siteConfig.links.site} target='_blank' rel='noreferrer'>
+              <div
+                className={cn(
+                  buttonVariants({ variant: 'ghost' }),
+                  'hidden w-10 px-0 sm:inline-flex'
+                )}
+              >
+                <Icons.site className='h-4 w-4' />
+                <span className='sr-only'>Site</span>
               </div>
             </Link>
             <ModeToggle />

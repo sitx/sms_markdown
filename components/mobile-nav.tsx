@@ -36,6 +36,7 @@ export function MobileNav() {
           <MobileLink onOpenChange={setOpen} href='/about'>
             About
           </MobileLink>
+          <hr className='my-2' />
           <Link target='_blank' rel='noreferrer' href={siteConfig.links.github}>
             GitHub
           </Link>
@@ -45,6 +46,9 @@ export function MobileNav() {
             href={siteConfig.links.telegram}
           >
             Telegram
+          </Link>
+          <Link target='_blank' rel='noreferrer' href={siteConfig.links.site}>
+            Site
           </Link>
         </div>
       </SheetContent>
