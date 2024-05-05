@@ -1,10 +1,26 @@
 import { posts } from '#site/content'
 import PostItem from '@/components/post-item'
+import { QueryPagination } from '@/components/query-pagination'
 import { sortPosts } from '@/lib/utils'
 
-export default async function BlogPage() {
+const POST_PER_PAGE = 5
+
+interface BlogPageProps {
+  searchParams: {
+    page?: string
+  }
+}
+
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const currentPage = Number(searchParams?.page) || 1
+
   const sortedPost = sortPosts(posts.filter(post => post.published))
-  const displayPosts = sortedPost
+  const totalPages = Math.ceil(sortedPost.length / POST_PER_PAGE)
+
+  const displayPosts = sortedPost.slice(
+    POST_PER_PAGE * (currentPage - 1),
+    POST_PER_PAGE * currentPage
+  )
 
   return (
     <>
@@ -41,6 +57,7 @@ export default async function BlogPage() {
             Нет постов пока нечего показать
           </p>
         )}
+        <QueryPagination totalPages={totalPages} className='mt-4 justify-end' />
       </div>
     </>
   )
