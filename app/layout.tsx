@@ -8,7 +8,7 @@ import { Providers } from '@/components/providers'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  title: 'SailorMoon',
+  title: 'Sailor',
   description:
     'Created by sky_wa1ker, some blog and sms, forms of some vessels',
   icons: [

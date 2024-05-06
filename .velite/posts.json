@@ -29,7 +29,7 @@
   {
     "slug": "blog/hello-from-maria",
     "title": "Сообщение по просьбе Марии",
-    "description": "Слушаем песню и кайфуем от короля и шута - Мария",
+    "description": "Слушаем песню и кайфуем от `Король и Шут - Мария`",
     "date": "2024-05-05T00:00:00.000Z",
     "published": true,
     "body": "const{Fragment:n,jsx:e,jsxs:r}=arguments[0];function _createMdxContent(t){const a={a:\"a\",h1:\"h1\",h2:\"h2\",p:\"p\",...t.components};return r(n,{children:[e(a.h1,{id:\"настроение-кайф\",children:e(a.a,{className:\"subheading-anchor\",ariaLable:\"Link to section\",href:\"#настроение-кайф\",children:\"Настроение кайф\"})}),\"\\n\",e(a.p,{children:\"Маня была в воторге от того что у короля и шута есть песня с ее именем\"}),\"\\n\",e(a.h2,{id:\"любимая-запись-в-записях-марии\",children:e(a.a,{className:\"subheading-anchor\",ariaLable:\"Link to section\",href:\"#любимая-запись-в-записях-марии\",children:\"Любимая запись в записях Марии\"})}),\"\\n\",e(a.p,{children:\".\"})]})}return{default:function(n={}){const{wrapper:r}=n.components||{};return r?e(r,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
