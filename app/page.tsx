@@ -24,7 +24,7 @@ export default function Home() {
               href='blog'
               className={cn(buttonVariants({ size: 'lg' }), 'w-full sm:w-fit')}
             >
-              Посмотри мой блог
+              Blog
             </Link>
             <Link
               href='/sms'
@@ -35,7 +35,7 @@ export default function Home() {
                 'w-full sm:w-fit'
               )}
             >
-              Sms
+              SMS
             </Link>
           </div>
         </div>
