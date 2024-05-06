@@ -18,7 +18,7 @@ export default function AboutPage({}: Props) {
         <div className='flex flex-col items-center gap-8 md:flex-row md:items-start'>
           <div className=' flex min-w-48 max-w-48 flex-col gap-2'>
             <Avatar className='h-48 w-48 '>
-              <AvatarImage src='/avatar.jpg' alt={siteConfig.author} />
+              <AvatarImage src={siteConfig.avatar} alt={siteConfig.author} />
               <AvatarFallback>DB</AvatarFallback>
             </Avatar>
             <h2 className='break-words text-center text-2xl font-bold'>
