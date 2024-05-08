@@ -34,7 +34,7 @@ export function MainNav() {
         SMS
       </Link>
       <Link
-        href='/about'
+        href='/tags'
         className={cn(
           'hidden text-sm font-medium transition-colors hover:text-primary sm:inline-flex',
           pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
