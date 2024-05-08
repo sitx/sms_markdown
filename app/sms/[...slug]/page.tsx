@@ -4,6 +4,7 @@ import { formatDate } from '@/lib/utils'
 import { Calendar } from 'lucide-react'
 import { notFound } from 'next/navigation'
 import '@/styles/mdx.css'
+import { Tag } from '@/components/tag'
 
 interface PostPageProps {
   params: {
@@ -33,6 +34,9 @@ export default async function PostPage({ params }: PostPageProps) {
   return (
     <article className='mx container prose mx-auto max-w-3xl py-6 dark:prose-invert'>
       <h1 className='mb-2 text-2xl'>{post.title}</h1>
+      <div className='mb-2 flex gap-2'>
+        {post.tags?.map(tag => <Tag key={tag} tag={tag} />)}
+      </div>
       {post.description ? (
         <p className='mt-0 text-xl text-muted-foreground'>{post.description}</p>
       ) : null}
