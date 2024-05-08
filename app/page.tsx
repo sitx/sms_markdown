@@ -17,7 +17,7 @@ export default function Home() {
             Добро пожаловать
           </h1>
           <p className='mx-auto max-w-[42rem] text-balance text-muted-foreground sm:text-xl'>
-            {siteConfig.descriprion}
+            {siteConfig.description}
           </p>
           <div className='flex flex-col justify-center gap-4 sm:flex-row'>
             <Link
