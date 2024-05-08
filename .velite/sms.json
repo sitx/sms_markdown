@@ -5,6 +5,9 @@
     "description": "первая запист в разделе смс",
     "date": "2024-05-06T00:00:00.000Z",
     "published": true,
+    "tags": [
+      "test"
+    ],
     "body": "const{Fragment:n,jsx:e,jsxs:r}=arguments[0];function _createMdxContent(t){const a={a:\"a\",h1:\"h1\",h3:\"h3\",p:\"p\",...t.components};return r(n,{children:[e(a.h1,{id:\"привет-sms\",children:e(a.a,{className:\"subheading-anchor\",ariaLable:\"Link to section\",href:\"#привет-sms\",children:\"Привет SMS\"})}),\"\\n\",e(a.p,{children:\"текст смс\"}),\"\\n\",e(a.h3,{id:\"подтема-смс\",children:e(a.a,{className:\"subheading-anchor\",ariaLable:\"Link to section\",href:\"#подтема-смс\",children:\"подтема смс\"})}),\"\\n\",e(a.p,{children:\"текст параграфа смс\"})]})}return{default:function(n={}){const{wrapper:r}=n.components||{};return r?e(r,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
     "slugAsParams": "sms-itro"
   },
@@ -14,6 +17,10 @@
     "description": "вторая запист в разделе смс",
     "date": "2024-05-06T00:00:00.000Z",
     "published": true,
+    "tags": [
+      "test",
+      "test2"
+    ],
     "body": "const{Fragment:n,jsx:e,jsxs:r}=arguments[0];function _createMdxContent(t){const a={a:\"a\",h1:\"h1\",h3:\"h3\",p:\"p\",...t.components};return r(n,{children:[e(a.h1,{id:\"sms-глава-2\",children:e(a.a,{className:\"subheading-anchor\",ariaLable:\"Link to section\",href:\"#sms-глава-2\",children:\"SMS глава 2\"})}),\"\\n\",e(a.p,{children:\"текст смс\"}),\"\\n\",e(a.h3,{id:\"подтема-смс\",children:e(a.a,{className:\"subheading-anchor\",ariaLable:\"Link to section\",href:\"#подтема-смс\",children:\"подтема смс\"})}),\"\\n\",e(a.p,{children:\"текст параграфа смс\"})]})}return{default:function(n={}){const{wrapper:r}=n.components||{};return r?e(r,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
     "slugAsParams": "sms-itro2"
   }
