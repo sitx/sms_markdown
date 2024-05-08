@@ -1,9 +1,13 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { siteConfig } from '@/config/site'
+import { Metadata } from 'next'
 
-type Props = {}
+export const metadata: Metadata = {
+  title: 'About me',
+  description: 'information about me'
+}
 
-export default function AboutPage({}: Props) {
+export default function AboutPage() {
   return (
     <>
       <div className='container max-w-6xl py-6 lg:py-10'>

@@ -1,22 +1,30 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { SiteHeader } from '@/components/site-header'
 import { Providers } from '@/components/providers'
+import { siteConfig } from '@/config/site'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 export const metadata: Metadata = {
-  title: 'Sailor',
-  description:
-    'Created by sky_wa1ker, some blog and sms, forms of some vessels',
+  title: siteConfig.name,
+  description: siteConfig.descriprion,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.url),
   icons: [
     {
       url: '/wave.svg',
       sizes: '64x64',
       type: 'image/svg'
     }
+  ]
+}
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' }
   ]
 }
 

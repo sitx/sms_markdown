@@ -2,8 +2,14 @@ import { posts } from '#site/content'
 import PostItem from '@/components/post-item'
 import { QueryPagination } from '@/components/query-pagination'
 import { sortPosts } from '@/lib/utils'
+import { Metadata } from 'next'
 
 const POST_PER_PAGE = 5
+
+export const metadata: Metadata = {
+  title: 'My blog',
+  description: 'This is my blog'
+}
 
 interface BlogPageProps {
   searchParams: {
