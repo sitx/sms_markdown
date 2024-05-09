@@ -101,7 +101,7 @@ export default function TagPage({ params }: TagPageProps) {
                 <Tag
                   tag={tagInList}
                   key={tagInList}
-                  count={tags[tagInList]}
+                  count={smsTags[tagInList]}
                   current={slug(tagInList) === tag}
                 />
               ))}
