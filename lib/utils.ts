@@ -43,6 +43,14 @@ export function getAllTags(posts: Array<Post>) {
   return tags
 }
 
+export function joinTags(
+  aTags: Record<string, number>,
+  bTags: Record<string, number>
+) {
+  const tags: Record<string, number> = { ...aTags, ...bTags }
+  return tags
+}
+
 export function sortTagsByCount(tags: Record<string, number>) {
   return Object.keys(tags).sort((a, b) => tags[b] - tags[a])
 }

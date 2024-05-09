@@ -1,4 +1,4 @@
-import { posts } from '#site/content'
+import { posts, sms } from '#site/content'
 import PostItem from '@/components/post-item'
 import { Tag } from '@/components/tag'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -33,8 +33,13 @@ export default function TagPage({ params }: TagPageProps) {
   const title = tag.split('-').join(' ')
 
   const displayPosts = getPostsByTagSlug(posts, tag)
+  const displaySms = getPostsByTagSlug(sms, tag)
+  const display = [...displayPosts, ...displaySms]
+
   const tags = getAllTags(posts)
   const sortedTags = sortTagsByCount(tags)
+  const smsTags = getAllTags(sms)
+  const sortedSmsTags = sortTagsByCount(smsTags)
   return (
     <>
       <div className='container max-w-4xl py-6 lg:py-10'>
@@ -51,9 +56,9 @@ export default function TagPage({ params }: TagPageProps) {
         <div className='mt-8 grid grid-cols-12 gap-3 '>
           <div className='col-span-12 col-start-1 sm:col-span-8'>
             <hr />
-            {displayPosts?.length > 0 ? (
+            {display?.length > 0 ? (
               <ul className='flex flex-col'>
-                {displayPosts.map(post => {
+                {display.map(post => {
                   const { slug, date, description, title, tags } = post
                   return (
                     <li key={slug}>
@@ -76,10 +81,23 @@ export default function TagPage({ params }: TagPageProps) {
           </div>
           <Card className='col-span-12 row-start-3 h-fit sm:col-span-4 sm:col-start-9 sm:row-start-1'>
             <CardHeader>
-              <CardTitle>Tags</CardTitle>
+              <CardTitle>Post tags</CardTitle>
             </CardHeader>
             <CardContent className='flex flex-wrap gap-2'>
               {sortedTags?.map(tagInList => (
+                <Tag
+                  tag={tagInList}
+                  key={tagInList}
+                  count={tags[tagInList]}
+                  current={slug(tagInList) === tag}
+                />
+              ))}
+            </CardContent>
+            <CardHeader>
+              <CardTitle>Sms tags</CardTitle>
+            </CardHeader>
+            <CardContent className='flex flex-wrap gap-2'>
+              {sortedSmsTags?.map(tagInList => (
                 <Tag
                   tag={tagInList}
                   key={tagInList}

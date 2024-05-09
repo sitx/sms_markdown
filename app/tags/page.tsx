@@ -28,7 +28,7 @@ export default async function TagsPage() {
       <h2 className='my-2'>SMS:</h2>
       <div className='flex flex-wrap gap-3'>
         {sortedSmsTags?.map(tag => (
-          <Tag tag={tag} count={tags[tag]} key={tag} />
+          <Tag tag={tag} count={smsTags[tag]} key={tag} />
         ))}
       </div>
     </div>

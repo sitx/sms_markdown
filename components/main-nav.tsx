@@ -28,13 +28,13 @@ export function MainNav() {
         href='/sms'
         className={cn(
           'hidden text-sm font-medium transition-colors hover:text-primary sm:inline-flex',
-          pathname === '/blog' ? 'text-foreground' : 'text-foreground/60'
+          pathname === '/sms' ? 'text-foreground' : 'text-foreground/60'
         )}
       >
         SMS
       </Link>
       <Link
-        href='/tags'
+        href='/about'
         className={cn(
           'hidden text-sm font-medium transition-colors hover:text-primary sm:inline-flex',
           pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
