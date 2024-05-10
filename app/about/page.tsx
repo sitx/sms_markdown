@@ -33,19 +33,9 @@ export default function AboutPage() {
             </p>
           </div>
           <p className='py-4 text-lg text-muted-foreground'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            deleniti saepe totam, voluptatum dolores cumque ducimus similique
-            voluptas corrupti odit impedit corporis modi id dolorem
-            consequuntur, culpa reprehenderit illum dolor. Consequatur
-            voluptatem, rem ullam expedita deleniti praesentium cumque illum
-            distinctio aperiam eveniet animi dolores eum asperiores fugiat
-            laudantium quod totam rerum! A non unde illum ea vitae, pariatur
-            nulla consequatur similique ducimus est, amet voluptate incidunt
-            nisi temporibus velit quidem fugiat asperiores illo minus in
-            corporis id, repellendus error? Voluptatibus reiciendis voluptate
-            maxime repellendus doloremque tenetur, voluptates perferendis
-            consequatur minima laudantium? Voluptas, numquam? Minus consequuntur
-            blanditiis fugiat molestiae quam illo!
+            Имею небольшой опыт морской жизни, считаю себя жителем планеты - как
+            многие моряки, люблю приключения и новое, просто "Добрый
+            самаритянин".
           </p>
         </div>
       </div>

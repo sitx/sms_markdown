@@ -1,0 +1,270 @@
+---
+title: Базовый синтаксис записи и форматирования
+description:
+  Создавайте расширенное форматирование текста и кода в GitHub с помощью
+  простого синтаксиса.
+date: 2024-05-10
+tags: ['mdx']
+published: true
+---
+
+# Базовый синтаксис записи и форматирования
+
+The following markdown cheatsheet is adapted from:
+https://guides.github.com/features/mastering-markdown/
+
+## Заголовки
+
+Чтобы создать заголовок, добавьте от одного до шести символов # перед его
+текстом. Количество используемых # элементов определяет уровень иерархии и
+размер шрифта заголовка.
+
+```
+# A first-level heading
+## A second-level heading
+### A third-level heading
+```
+
+<Callout type="default">
+
+# A first-level heading
+
+## A second-level heading
+
+### A third-level heading
+
+</Callout>
+
+## Текст стилей
+
+Текст в полях комментариев и файлах .md можно выделять полужирным шрифтом,
+курсивом, зачеркиванием, а также подстрочным или надстрочным шрифтом.
+
+```mdx
+_This text will be italic_
+
+**This text will be bold**
+
+_You **can** combine them_
+```
+
+_This text will be italic_
+
+**This text will be bold**
+
+_You **can** combine them_
+
+| Стиль                       | Синтаксис                       | Сочетания клавиш                             | Пример                             | Выходные данные                |
+| --------------------------- | ------------------------------- | -------------------------------------------- | ---------------------------------- | ------------------------------ |
+| Жирный                      | \*\* \*\* или \_\_ \_\_         | COMMAND+B (Mac) или CTRL+B (Windows и Linux) | \*\*This is bold text\*\*          | **This is bold text**          |
+| Italic                      | \* \* или \_ \_                 | COMMAND+I (Mac) или CTRL+I (Windows и Linux) | \_This text is italicized\_        | _This text is italicized_      |
+| Зачеркнутый                 | \~\~ \~\~                       | нет                                          | \~\~Это был неправильный текст\~\~ | ~~Это был неправильный текст~~ |
+| Весь полужирный и курсивный | \*\*\* \*\*\* или \*\*\_ \_\*\* | нет                                          | \*\*\*Весь этот текст важен\*\*\*  | **_Весь этот текст важен_**    |
+
+## Текст в кавычках
+
+Цитировать текст можно с помощью >.
+
+```
+Это текст не цитата
+> Это текст цитата
+```
+
+Это текст не цитата
+
+> Это текст цитата
+
+## Ссылки.
+
+Чтобы создать встроенную ссылку, заключите ее текст в квадратные скобки [ ], а
+затем заключите URL-адрес в обычные скобки ( ). Чтобы создать ссылку, можно
+также использовать сочетание клавиш Command+K. При выборе текста можно вставить
+URL-адрес из буфера обмена, чтобы автоматически создать ссылку из выделенного
+фрагмента.
+
+Вы также можете создать гиперссылку Markdown, выделите текст и с помощью
+сочетания клавиш Command+V. Если вы хотите заменить текст ссылкой, используйте
+сочетание клавиш Command+Shift+V.
+
+```
+This site was built using [GitHub Pages](https://pages.github.com/).
+```
+
+This site was built using [GitHub Pages](https://pages.github.com/).
+
+## Списки
+
+Вы можете сделать неупорядоченный список, выполнив одну или несколько строк
+текста с -помощью ,\* или.+
+
+```
+- George Washington
+* John Adams
++ Thomas Jefferson
+```
+
+- George Washington
+
+* John Adams
+
+- Thomas Jefferson
+
+## Вложенные списки
+
+Чтобы создать вложенный список, добавьте отступы для одного или нескольких
+элементов списка под другим элементом.
+
+Чтобы создать вложенный список с помощью веб-редактора GitHub или текстового
+редактора, использующего монопространстванный шрифт, например Visual Studio
+Code, можно визуально выровнять список. Введите пробелы перед вложенным
+элементом списка, пока символ маркера списка (- или \*) находится
+непосредственно под первым символом текста в элементе над ним.
+
+```
+1. First list item
+   - First nested list item
+     - Second nested list item
+```
+
+1. First list item
+   - First nested list item
+     - Second nested list item
+
+Чтобы создать вложенный список в редакторе комментариев на GitHub, в котором не
+используется моноширинный шрифт, можно подсчитать количество символов перед
+содержимым элемента списка непосредственно над вложенным списком. Затем введите
+такое же число пробелов перед элементом вложенного списка.
+
+В этом примере можно добавить элемент вложенного списка под элементом 100. First
+list item списка, отступив от начала строки не менее чем на пять пробелов, так
+как перед текстом First list item пять символов (100 .).
+
+```
+100. First list item
+     - First nested list item
+```
+
+100. First list item
+     - First nested list item
+
+## Списки задач
+
+Чтобы создать список задач, добавьте к элементам списка префикс — дефис, пробел,
+а затем [ ]. Чтобы пометить задачу как завершенную, используйте [x].
+
+```
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+```
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+
+Если описание элемента списка задач начинается с круглой скобки, необходимо
+экранировать ее с помощью символа \:
+
+```
+- [ ] \(Optional) Open a followup issue
+```
+
+- [ ] \(Optional) Open a followup issue
+
+Дополнительные сведения см. в разделе
+[Сведения о списках задач.](https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists)
+
+## Упоминание людей и команд
+
+Вы можете упомянуть пользователя или команду на GitHub, введя @ перед их именем.
+Пользователь или команда получит уведомление, которое привлечет их внимание к
+беседе. Пользователи также получают уведомления, когда вы изменяете комментарий,
+упоминая имя пользователя или команды. Дополнительные сведения о уведомлениях
+см. в разделе
+["Об уведомлениях".](https://docs.github.com/ru/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications)
+
+> Примечание. Пользователь будет получать уведомления об упоминании, только если
+> он имеет доступ на чтение к репозиторию и, если репозиторий принадлежит
+> организации, пользователь является членом организации.
+
+```
+@github/support What do you think about these updates?
+```
+
+@github/support What do you think about these updates?
+
+При вводе символа @ отображается список людей или команд, участвующих в проекте.
+Список фильтруется по мере ввода, поэтому после того, как вы найдете имя нужного
+человека или команды, можно выбрать его с помощью клавиш со стрелками и нажать
+клавишу TAB или ВВОД, чтобы завершить имя. Для команд введите
+@organization/team-name, и все члены этой команды будут подписаны на беседу.
+
+Результаты автозавершения ограничены участниками репозитория и любыми другими
+участниками беседы.
+
+## Ссылка на проблемы и запросы на вытягивание
+
+Вы можете получить список предлагаемых проблем и запросов на вытягивание в
+репозитории, введя #. Введите номер или заголовок проблемы либо запроса на
+вытягивание, чтобы отфильтровать список, а затем нажмите клавишу TAB или ВВОД,
+чтобы завершить выделенный результат.
+
+Дополнительные сведения см. в разделе
+[Автосвязанные ссылки и URL-адреса.](https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)
+
+## Абзацы
+
+Чтобы создать абзац, оставьте пустую строку между строками текста.
+
+## Сноски
+
+Вы можете добавлять в содержимое сноски с помощью квадратных скобок, используя
+следующий синтаксис:
+
+```
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+  This is a second line.
+```
+
+Сноски отрисовываются следующим образом:
+
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]:
+    To add line breaks within a footnote, prefix new lines with 2 spaces. This
+    is a second line.
+
+> Примечание. Позиция сноски в Markdown не влияет на то, где сноска будет
+> отрисовываться. Вы можете написать текст сноски сразу после ссылки на нее, и
+> сноска по-прежнему будет отображаться в нижней части документа Markdown.
+> Сноски на вики-сайтах не поддерживаются.
+
+## Дополнительные материалы
+
+- [Спецификация GitHub Flavored Markdown](https://github.github.com/gfm/)
+- ["Сведения о написании и форматировании текста на GitHub"](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github)
+- ["Работа с расширенным форматированием"](https://docs.github.com/ru/get-started/writing-on-github/working-with-advanced-formatting)
+- ["Краткое руководство по написанию на сайте GitHub"](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+- [Базовый синтаксис записи и форматирования](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Возможности этого сайтах
+
+### Элемент Callout
+
+```
+<Callout type='warning'>warning</Callout>
+<Callout type='danger'>danger</Callout>
+<Callout type='default'>default</Callout>
+```
+
+<Callout type='warning'>warning</Callout>
+<Callout type='danger'>danger</Callout>
+<Callout type='default'>default</Callout>
