@@ -40,11 +40,9 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <div className='flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8'>
           <div className=' flex-1 space-y-4'>
             <h1 className='inline-block text-4xl font-black lg:text-5xl'>
-              Блог
+              Конвенции, новости, морской индустрии балкерного флота
             </h1>
-            <p className='text-xl text-muted-foreground'>
-              Мои рассуждения обо всем и не о чем.
-            </p>
+            <p className='text-xl text-muted-foreground'>Полезная информация</p>
           </div>
         </div>
         <div className='mt-8 grid grid-cols-12 gap-3 '>

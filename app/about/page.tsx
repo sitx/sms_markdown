@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { siteConfig } from '@/config/site'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About me',
@@ -35,6 +36,7 @@ export default function AboutPage() {
           <p className='py-4 text-lg text-muted-foreground'>
             Имею небольшой опыт морской жизни, считаю себя жителем планеты - как
             многие моряки, люблю приключения и новое, просто Добрый самаритянин.
+            <Link href="https://proza.ru/2014/05/18/1930">Q</Link>
           </p>
         </div>
       </div>
