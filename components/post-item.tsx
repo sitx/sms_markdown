@@ -39,7 +39,7 @@ export default function PostItem({
           </dd>
         </dl>
         <Link
-          href={slug}
+          href={'/' + slug}
           className={cn(buttonVariants({ variant: 'link' }), 'py-0')}
         >
           Read more →
