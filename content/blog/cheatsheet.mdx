@@ -128,6 +128,64 @@ published: true
 
 ## Grain code
 
-- initial metacentric stab not less than 0.30m
-- angle of heel due to shift of grain not be greater than 12deg
-- heeling arm and righting arm --not less than 0.075 meter radians
+SOLAS ch 6 / res. msc.23(59)
+
+### Requirements
+
+1. **Angle of heel** due to assumed shifring of GRAIN not to be more than
+   **12°** or deck edge immersion angle, whichever is less
+
+2. RESIDUAL AREA between **heeling arm curve** and **GZ curve** shall be atleast
+   **0.0075 m \* rad**
+
+3. Initial GM to be atleast **0.30 m**
+
+4. VSL to be upright before depature (no list b4 depature)
+
+Grain have Low **AOR** - angle of repose (about 12-15°)
+
+![angle of repose](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Angleofrepose.png/420px-Angleofrepose.png)
+
+### Assumed shift
+
+- compartment **PARTLY FILLED** - grain can shift from initial surface up to
+  **25°**
+- compartment **FULLY FILLED** - grain can shift from initial surface up to
+  **15°**
+
+```
+SF = Vol/Mass = m3/t
+
+Moment = mass / distance
+
+VHM = Moment / SF
+```
+
+**SF** - Stowage factor / how much space occupay 1 tonna of cargo
+
+**VHM** - Volumetric Heeling Moment
+
+There are factors for VHM, implemented due to Grain shift not only horizontaly
+but also verticaly:
+
+- Fully Trimmed CC = 1.06
+- Fully Untrimmed = 1
+- Partly loaded & Trimmed = 1.12
+
+```
+
+ Righting Moment = GZ * D
+
+```
+
+**GZ** - Righting lever
+
+**D** - displacement
+
+```
+λ₀ = Heeling lever(angle of shift 0°) = VHM / (SF \* D) m
+
+COS 40° = 0.766044 ~> 0.8
+
+λ₄₀ = Heeling lever(angle of shift 40°) = λ₀ * 0.8
+```
